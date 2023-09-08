@@ -1,4 +1,4 @@
-/* Vertically aligned with gradient transitions, web fonts, and shadow */
+/* Vertically aligned with animation on even elements, gradient transitions, web fonts, and shadow */
 
 .parent {
     display: flex;
@@ -15,11 +15,11 @@
     font-size: 40px;
     text-align: center;
     margin: auto auto 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
 }
 
 .child:nth-child(odd) {
     background: linear-gradient(to bottom, #dfe1e7, #bdc3c7); /* Gradient background */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
 }
 
 .child:nth-child(even) {
@@ -37,6 +37,18 @@
 /* Add hover effect */
 .child:hover {
     cursor: pointer;
-    background-color: #3498db;
     transform: scale(1.05); /* Scale on hover */
+}
+
+.child:nth-child(even):hover {
+    animation: moveBox 2s linear infinite;
+}
+
+@keyframes moveBox {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
