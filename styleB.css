@@ -21,24 +21,24 @@ body {
     border-left: 10px dotted #D0D0FF;
     margin-right: 10px;
     display: flex;
-    /*justify-content: center;
-    align-items: center;*/
-    padding-left: 10px;
     font-size: 40px;
     color: black;
     transition: color 0.3s, background-color 0.3s, cursor 0.3s;
     letter-spacing: 10px;
-    cursor: pointer;
 }
 
 .child:hover {
-    cursor: pointer;
     color: goldenrod;
     background-color: yellow;
+    cursor: pointer;
 }
 
 .child:last-child {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
+}
+
+.element{
+    padding-left: 10px;
 }
