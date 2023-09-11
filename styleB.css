@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: Tahoma, sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
     align-items: center;*/
     padding-left: 10px;
     font-size: 40px;
-    color: #D0D0FF;
+    color: black;
     transition: color 0.3s, background-color 0.3s, cursor 0.3s;
     letter-spacing: 10px;
     cursor: pointer;
